@@ -154,7 +154,7 @@ const translations = {
       "Beheer je praktijkfacturen"
     ],
     "featureDescriptions": [
-      "Plan patiëntafspraken in een overzichtelijke digitale agenda. Bekijk je planning op desktop of mobiel en houd je afspraken in dezelfde applicatie als je praktijkadministratie.",
+      "Plan afspraken in een overzichtelijke digitale agenda. Bekijk je planning op desktop of mobiel en houd je afspraken in dezelfde applicatie als je praktijkadministratie.",
       "Stuur herinneringen naar patiënten, zodat ze hun afspraken niet missen.",
       "Beheer facturen naast je patiëntafspraken en declaraties. Houd de administratie van je praktijk in één applicatie, in plaats van verspreid over losse stapels papier."
     ],
