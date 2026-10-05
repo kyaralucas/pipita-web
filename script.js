@@ -12,6 +12,8 @@ const translations = {
       "FAQ"
     ],
     "start": "Join waitlist",
+    "betaMessage": "Pipita is currently in closed beta.",
+    "betaLink": "Sign up for the waitlist here.",
     "explore": "See the practice tools",
     "eyebrow": "Practice management software for Curaçao",
     "hero": "Manage your practice.<br><em>Get back to your patients.</em>",
@@ -57,7 +59,6 @@ const translations = {
       "How much time can Pipita save?",
       "Can I use Pipita on my phone and computer?",
       "How is patient information protected?",
-      "How does the subscription work?",
       "Does Pipita bring patient information and administration together?",
       "Was Pipita developed with healthcare professionals?"
     ],
@@ -67,7 +68,6 @@ const translations = {
       "For one physiotherapist with 50 patients, monthly administration fell from 16 hours to 2 using Pipita. That is 14 hours saved each month in that practice. Your time savings will depend on your patient volume and workflow.",
       "Yes. Pipita runs in your web browser on desktop and mobile. There is no complicated software installation, so you can access your practice tools from either device.",
       "Pipita includes access controls, database encryption, regular backups, and secure data storage. These safeguards are part of how the platform handles sensitive healthcare information.",
-      "Pipita is available through a monthly subscription. Plan details and prices have not yet been published on this website.",
       "Yes. Patient information, scheduling, and administration are part of the same application. You can manage the daily work of your practice without keeping these tasks in separate paper-based processes.",
       "Yes. Amy, a physiotherapist, and Kyara, a developer, first built Pipita to reduce the time Amy spent preparing declarations. Amy tested it in her daily practice, and feedback from other healthcare professionals helped shape the broader practice-management application."
     ],
@@ -132,6 +132,8 @@ const translations = {
       "Veelgestelde vragen"
     ],
     "start": "Meld je aan voor de wachtlijst",
+    "betaMessage": "Pipita is momenteel in besloten bèta.",
+    "betaLink": "Meld je hier aan voor de wachtlijst.",
     "explore": "Bekijk de praktijkfuncties",
     "eyebrow": "Praktijksoftware voor Curaçao",
     "hero": "Beheer je praktijk.<br><em>Besteed meer tijd aan je patiënten.</em>",
@@ -177,7 +179,6 @@ const translations = {
       "Hoeveel tijd kan ik besparen met Pipita?",
       "Kan ik Pipita op mijn telefoon en computer gebruiken?",
       "Hoe wordt patiëntinformatie beschermd?",
-      "Hoe werkt het abonnement?",
       "Staan patiëntinformatie en administratie bij elkaar?",
       "Is Pipita samen met zorgprofessionals ontwikkeld?"
     ],
@@ -187,7 +188,6 @@ const translations = {
       "Bij één fysiotherapeut met 50 patiënten daalde de voorbereiding van maandelijkse administratie met Pipita van 16 naar 2 uur. Dat scheelt in die praktijk 14 uur per maand. Jouw tijdwinst hangt af van je aantal patiënten en werkwijze.",
       "Ja. Pipita werkt in je webbrowser op desktop en mobiel. Een ingewikkelde software-installatie is niet nodig, zodat je je praktijkfuncties op beide apparaten kunt gebruiken.",
       "Pipita biedt toegangsbeheer, databaseversleuteling, regelmatige back-ups en veilige gegevensopslag. Deze maatregelen maken deel uit van de manier waarop het platform met gevoelige zorggegevens omgaat.",
-      "Pipita werkt met een maandelijks abonnement. Details over de abonnementen en prijzen zijn nog niet op deze website gepubliceerd.",
       "Ja. Patiëntinformatie, planning en administratie zijn onderdeel van dezelfde applicatie. Zo kun je het dagelijkse werk van je praktijk beheren zonder deze taken in losse papieren processen bij te houden.",
       "Ja. Amy, fysiotherapeut, en Kyara, developer, bouwden Pipita eerst om de tijd die Amy aan declaraties besteedde te verminderen. Amy testte de software in haar dagelijkse praktijk. Feedback van andere zorgprofessionals hielp de bredere praktijkapplicatie vorm te geven."
     ],
@@ -252,6 +252,8 @@ const translations = {
       "Pregunta frekuente"
     ],
     "start": "Djòin nos lista di espera",
+    "betaMessage": "Pipita ta aktualemente den beta será.",
+    "betaLink": "Inskribí aki pa e lista di espera.",
     "explore": "Mira e funshonnan",
     "eyebrow": "Software pa maneho di práktika na Kòrsou",
     "hero": "Manehá bo práktika.<br><em>Duna bo pasientenan mas tempu.</em>",
@@ -297,7 +299,6 @@ const translations = {
       "Kuantu tempu mi por spar ku Pipita?",
       "Mi por usa Pipita riba mi telefòn i kompiuter?",
       "Kon informashon di pasiente ta wordu protegé?",
-      "Kon e suskripshon ta funshoná?",
       "Informashon di pasiente i administrashon ta huntu?",
       "Pipita a wordu desaroyá huntu ku profeshonalnan di kuido?"
     ],
@@ -307,7 +308,6 @@ const translations = {
       "Pa un fisioterapeuta ku 50 pasiente, su administratshon a baha di 16 ora pa 2 ku Pipita. Ta 14 ora spar kada luna den e práktika ei. Bo tempu spar lo dependé di bo kantidat di pasiente i manera di traha.",
       "Si. Pipita ta funshoná den bo browser riba desktop i mobil. No tin mester di instalashon kompliká di software, pa bo por usa e funshonnan di bo práktika riba tur dos aparato.",
       "Pipita tin kontrol di akseso, enkriptashon di base di dato, kopianan di seguridat regular i almacenamentu sigur di dato. E medidanan aki ta parti di kon e plataforma ta maneha informashon sensitivo di kuido.",
-      "Pipita ta usa un suskripshon mensual. Detayenan di plannan i preisnan no ta publiká riba e wèpsait aki ainda.",
       "Si. Informashon di pasiente, planifikashon i administrashon ta parti di e mesun aplikashon. Bo por maneha e trabou diario di bo práktika sin tene e tareanan aki den prosesonan separá riba papel.",
       "Si. Amy, un fisioterapeuta, i Kyara, un desaroyadó di software, a traha Pipita promé pa redusí e tempu ku Amy tabata pasa riba deklarashonnan. Amy a tèst e software den su práktika diario. Komentario di otro profeshonalnan di kuido a yuda forma e aplikashon pa maneho di práktika."
     ],
@@ -383,6 +383,7 @@ function render(lang) {
   document.querySelector('meta[name="description"]').content = t.seoDescription;
   document.getElementById('app').innerHTML = `
   <a class="skip-link" href="#main">${t.skip}</a>
+  <aside class="beta-banner"><p class="wrap"><span class="beta-icon" aria-hidden="true">🚀</span> ${t.betaMessage} <a href="${config.signupUrl}" target="_blank" rel="noopener noreferrer">${t.betaLink}</a></p></aside>
   <header class="header wrap"><a class="header-logo" href="#" aria-label="Pipita"><img src="images/Logo_Name.png" alt="Pipita" width="1270" height="499"></a><nav class="nav" id="navigation" aria-label="${t.menu}">${t.nav.map((n,i)=>`<a href="#${['businesses','features','faq'][i]}">${n}</a>`).join('')}</nav><div class="header-actions">${languageSelect(t,'header')}<button class="btn btn-dark" data-start>${t.start}</button><button class="menu-toggle" aria-label="${t.menu}" aria-controls="navigation" aria-expanded="false">☰</button></div></header>
   <main id="main">
   <section class="hero">

@@ -24,3 +24,11 @@
 .business-card:after{z-index:1;pointer-events:none}
 .business-card h3{position:absolute;left:25px;right:25px;bottom:25px;z-index:2}
 @media(max-width:650px){.business-card>img{aspect-ratio:3/2}.business-card h3{left:16px;right:16px;bottom:16px}}
+
+.beta-banner{position:sticky;top:0;z-index:50;background:var(--purple);color:#fff;text-align:center;padding:12px 0;font-size:14px;line-height:1.6}
+.beta-banner a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.beta-banner a:hover{text-decoration-thickness:2px}
+.beta-banner a:focus-visible{outline-color:#fff;outline-offset:3px}
+@media(max-width:650px){.beta-banner{font-size:12px;padding:10px 0}.header{position:relative}.nav{top:100%}}
+
+.beta-icon{display:inline-block;margin-right:5px}
