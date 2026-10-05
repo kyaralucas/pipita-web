@@ -1,7 +1,7 @@
 // Product copy adapted from the user-provided Pipita - Description.pdf.
 // App screens remain illustrative placeholders; Papiamentu is a draft translation.
-// Set signupUrl to the real HTTPS onboarding URL when it is available.
-const config = { signupUrl: '' };
+// All waitlist calls to action open this form in a new tab.
+const config = { signupUrl: 'https://forms.gle/rq7XEZfbXZM7J39H9' };
 const translations = {
   "en": {
     "title": "Pipita — Practice management software for Curaçao",
@@ -10,18 +10,14 @@ const translations = {
       "Practice tools",
       "FAQ"
     ],
-    "start": "Get started now",
+    "start": "Join waitlist",
     "explore": "See the practice tools",
     "eyebrow": "Practice management software for Curaçao",
     "hero": "Manage your practice.<br><em>Get back to your patients.</em>",
+    "heroSubtitle": "Practice management for healthcare providers in Curaçao",
     "sub": "Schedule patients, prepare SVB declarations, and manage invoices in one application. Pipita takes repetitive administration off your plate, so you can spend more of your day providing care.",
-    "pillars": [
-      "Patient scheduling",
-      "SVB declarations",
-      "Practice invoicing"
-    ],
     "businessLabel": "For healthcare providers in Curaçao",
-    "businessTitle": "Practice software that understands your work.",
+    "businessTitle": "Simple, flexible and powerful practice management software for your workflows",
     "businessIntro": "Physiotherapists, psychologists, and other care professionals share the same challenge: administration takes time away from patients. Pipita is built around healthcare workflows, with tools tailored to the type of care you provide.",
     "businesses": [
       "Physiotherapists",
@@ -30,16 +26,16 @@ const translations = {
     ],
     "placeholder": "Photo placeholder",
     "featureLabel": "From your first appointment to month-end admin",
-    "featureTitle": "Appointments. SVB claims. Invoices. One Pipita.",
-    "featureIntro": "Your practice needs more than a calendar. Pipita brings scheduling and financial administration together, reducing the manual work behind every day of care.",
+    "featureTitle": "Everything you need to run your practice",
+    "featureIntro": "Pipita brings scheduling and financial administration together, reducing the manual work behind every day of care.",
     "featureNames": [
       "Schedule your patients",
-      "Prepare SVB declarations",
+      "Send automated reminders",
       "Manage practice invoices"
     ],
     "featureDescriptions": [
       "Plan patient appointments in a clear digital calendar. Check your schedule on desktop or mobile and keep appointment planning in the same application as your practice administration.",
-      "Replace time-consuming, manual declaration preparation with digital workflows. Pipita automates repetitive steps in preparing monthly SVB claims, helping you spend fewer hours on month-end paperwork.",
+      "Send reminders to patients so they don't miss their appointments.",
       "Handle invoices alongside your patient scheduling and declarations. Keep the administrative side of your practice in one application instead of relying on separate piles of paperwork."
     ],
     "allLabel": "Patient information and practice administration",
@@ -52,7 +48,7 @@ const translations = {
     ],
     "ctaTitle": "Your patients need your time. Paperwork doesn’t.",
     "ctaText": "Bring your appointments, SVB declarations, and invoicing into Pipita, and give repetitive practice administration less of your day.",
-    "faqTitle": "Questions about running your practice with Pipita",
+    "faqTitle": "Frequently asked questions",
     "faqLabel": "Choosing software for your practice",
     "questions": [
       "What can I manage with Pipita?",
@@ -74,7 +70,7 @@ const translations = {
       "Yes. Patient information, scheduling, and administration are part of the same application. You can manage the daily work of your practice without keeping these tasks in separate paper-based processes.",
       "Yes. Amy, a physiotherapist, and Kyara, a developer, first built Pipita to reduce the time Amy spent preparing declarations. Amy tested it in her daily practice, and feedback from other healthcare professionals helped shape the broader practice-management application."
     ],
-    "footerTag": "Practice management for healthcare providers in Curaçao. Scheduling, SVB declarations, and invoicing in one application.",
+    "footerTag": "Practice management for healthcare providers in Curaçao.",
     "footerHeads": [
       "Pipita for your practice",
       "Healthcare providers",
@@ -123,7 +119,9 @@ const translations = {
     "impactLabel": "Less time preparing monthly SVB claims",
     "impactTitle": "16 hours of admin.<br>Down to 2.",
     "impactText": "For one physiotherapist managing 50 patients, Pipita reduced monthly SVB claims preparation from 16 hours to 2. That’s 14 hours a month no longer spent preparing declarations.",
-    "impactNote": "A result from one physiotherapy practice. Time savings vary with practice size and workflow."
+    "impactNote": "A result from one physiotherapy practice. Time savings vary with practice size and workflow.",
+    "awardNomination": "Nominated for the 2026 Curaçao Digital Innovation Award by CITI.",
+    "heroScreenshotAlt": "Pipita desktop application showing the monthly appointment calendar and navigation for patients and invoices."
   },
   "nl": {
     "title": "Pipita — Praktijksoftware voor zorgverleners op Curaçao",
@@ -132,18 +130,14 @@ const translations = {
       "Praktijkfuncties",
       "Veelgestelde vragen"
     ],
-    "start": "Start nu",
+    "start": "Meld je aan voor de wachtlijst",
     "explore": "Bekijk de praktijkfuncties",
     "eyebrow": "Praktijksoftware voor Curaçao",
     "hero": "Beheer je praktijk.<br><em>Besteed meer tijd aan je patiënten.</em>",
+    "heroSubtitle": "Praktijkbeheer voor zorgverleners op Curaçao",
     "sub": "Plan patiëntafspraken, bereid SVB-declaraties voor en beheer facturen in één applicatie. Pipita neemt terugkerend administratief werk uit handen, zodat je meer van je dag aan zorg kunt besteden.",
-    "pillars": [
-      "Patiëntafspraken",
-      "SVB-declaraties",
-      "Praktijkfacturatie"
-    ],
     "businessLabel": "Voor zorgverleners op Curaçao",
-    "businessTitle": "Praktijksoftware die jouw werk begrijpt.",
+    "businessTitle": "Eenvoudige, flexibele en krachtige praktijkbeheersoftware voor uw workflows",
     "businessIntro": "Fysiotherapeuten, psychologen en andere zorgprofessionals herkennen dezelfde uitdaging: administratie gaat ten koste van tijd voor patiënten. Pipita sluit aan op zorgprocessen, met functies afgestemd op het type zorg dat je verleent.",
     "businesses": [
       "Fysiotherapeuten",
@@ -152,16 +146,16 @@ const translations = {
     ],
     "placeholder": "Tijdelijke afbeelding",
     "featureLabel": "Van de eerste afspraak tot de maandafsluiting",
-    "featureTitle": "Afspraken. SVB-declaraties. Facturen. Eén Pipita.",
-    "featureIntro": "Je praktijk heeft meer nodig dan een agenda. Pipita brengt planning en financiële administratie samen en vermindert het handmatige werk achter elke dag zorg.",
+    "featureTitle": "Alles wat je nodig hebt om je praktijk te runnen",
+    "featureIntro": "Pipita brengt planning en financiële administratie samen en vermindert het handmatige werk achter elke dag zorg.",
     "featureNames": [
       "Plan je patiëntafspraken",
-      "Bereid SVB-declaraties voor",
+      "Verstuur geautomatiseerde herinneringen",
       "Beheer je praktijkfacturen"
     ],
     "featureDescriptions": [
       "Plan patiëntafspraken in een overzichtelijke digitale agenda. Bekijk je planning op desktop of mobiel en houd je afspraken in dezelfde applicatie als je praktijkadministratie.",
-      "Vervang tijdrovende, handmatige declaratievoorbereiding door digitale processen. Pipita automatiseert terugkerende stappen bij maandelijkse SVB-declaraties, zodat je minder uren kwijt bent aan papierwerk aan het einde van de maand.",
+      "Stuur herinneringen naar patiënten, zodat ze hun afspraken niet missen.",
       "Beheer facturen naast je patiëntafspraken en declaraties. Houd de administratie van je praktijk in één applicatie, in plaats van verspreid over losse stapels papier."
     ],
     "allLabel": "Patiëntinformatie en praktijkadministratie",
@@ -174,7 +168,7 @@ const translations = {
     ],
     "ctaTitle": "Je patiënten verdienen je tijd. Je papierwerk niet.",
     "ctaText": "Breng je afspraken, SVB-declaraties en facturatie onder in Pipita en besteed minder van je werkdag aan terugkerende praktijkadministratie.",
-    "faqTitle": "Vragen over praktijkbeheer met Pipita",
+    "faqTitle": "Veelgestelde vragen",
     "faqLabel": "Software kiezen voor je praktijk",
     "questions": [
       "Wat kan ik met Pipita beheren?",
@@ -196,7 +190,7 @@ const translations = {
       "Ja. Patiëntinformatie, planning en administratie zijn onderdeel van dezelfde applicatie. Zo kun je het dagelijkse werk van je praktijk beheren zonder deze taken in losse papieren processen bij te houden.",
       "Ja. Amy, fysiotherapeut, en Kyara, developer, bouwden Pipita eerst om de tijd die Amy aan declaraties besteedde te verminderen. Amy testte de software in haar dagelijkse praktijk. Feedback van andere zorgprofessionals hielp de bredere praktijkapplicatie vorm te geven."
     ],
-    "footerTag": "Praktijksoftware voor zorgverleners op Curaçao. Planning, SVB-declaraties en facturatie in één applicatie.",
+    "footerTag": "Praktijksoftware voor zorgverleners op Curaçao.",
     "footerHeads": [
       "Pipita voor je praktijk",
       "Zorgverleners",
@@ -245,7 +239,9 @@ const translations = {
     "impactLabel": "Minder tijd kwijt aan maandelijkse SVB-declaraties",
     "impactTitle": "16 uur administratie.<br>Terug naar 2.",
     "impactText": "Voor één fysiotherapeut met 50 patiënten bracht Pipita de voorbereiding van maandelijkse SVB-declaraties terug van 16 naar 2 uur. Dat is elke maand 14 uur minder declaratievoorbereiding.",
-    "impactNote": "Een resultaat uit één fysiotherapiepraktijk. De tijdwinst verschilt per praktijkgrootte en werkwijze."
+    "impactNote": "Een resultaat uit één fysiotherapiepraktijk. De tijdwinst verschilt per praktijkgrootte en werkwijze.",
+    "awardNomination": "Genomineerd voor de Curaçao Digital Innovation Award 2026 van CITI.",
+    "heroScreenshotAlt": "De desktopapplicatie van Pipita met de maandelijkse afsprakenagenda en navigatie voor patiënten en facturen."
   },
   "pap": {
     "title": "Pipita — Software pa maneho di práktika na Kòrsou",
@@ -254,18 +250,14 @@ const translations = {
       "Funshonnan",
       "Pregunta frekuente"
     ],
-    "start": "Kuminsá awó",
+    "start": "Djòin nos lista di espera",
     "explore": "Mira e funshonnan",
     "eyebrow": "Software pa maneho di práktika na Kòrsou",
     "hero": "Manehá bo práktika.<br><em>Duna bo pasientenan mas tempu.</em>",
+    "heroSubtitle": "Maneho di práktika pa dunadónan di kuido na Kòrsou",
     "sub": "Planifiká sitanan di pasiente, prepará deklarashonnan di SVB i manejá fakturanan den un solo aplikashon. Pipita ta kita trabou administrativo repetitivo for di bo man, pa bo por dediká mas di bo dia na kuido.",
-    "pillars": [
-      "Sitanan di pasiente",
-      "Deklarashonnan di SVB",
-      "Fakturashon di práktika"
-    ],
     "businessLabel": "Pa dunadónan di kuido na Kòrsou",
-    "businessTitle": "Software di práktika ku ta komprondé bo trabou.",
+    "businessTitle": "Software di maneho di práktika simpel, fleksibel i poderoso pa bo workflows",
     "businessIntro": "Fisioterapeutanan, sikólogonan i otro profeshonalnan di kuido ta enfrentá e mesun reto: administrashon ta kita tempu for di pasientenan. Pipita ta basá riba prosesonan di kuido, ku funshonnan adaptá na e tipo di kuido ku bo ta duna.",
     "businesses": [
       "Fisioterapeutanan",
@@ -274,17 +266,17 @@ const translations = {
     ],
     "placeholder": "Foto di ehèmpel",
     "featureLabel": "For di e promé sita te administrashon di fin di luna",
-    "featureTitle": "Sitanan. Deklarashonnan di SVB. Fakturanan. Un solo Pipita.",
-    "featureIntro": "Bo práktika mester mas ku un agenda. Pipita ta trese planifikashon i administrashon finansiero huntu i ta redusí e trabou manual tras di kada dia di kuido.",
+    "featureTitle": "Tur loke bo mester pa manehá bo práktika",
+    "featureIntro": "Pipita ta trese planifikashon i administrashon finansiero huntu i ta redusí e trabou manual tras di kada dia di kuido.",
     "featureNames": [
       "Planifiká sitanan di pasiente",
-      "Prepará deklarashonnan di SVB",
+      "Manda rekordatorionan di sita",
       "Manehá fakturanan di bo práktika"
     ],
     "featureDescriptions": [
-      "Planifiká sitanan di pasiente den un agenda digital kla. Mira bo planifikashon riba desktop òf mobil i tene bo sitanan den e mesun aplikashon ku administrashon di bo práktika.",
-      "Remplasá preparashon manual di deklarashonnan ku ta tuma hopi tempu ku prosesonan digital. Pipita ta automatisá pasonan repetitivo pa prepará deklarashonnan mensual di SVB, pa bo pasa ménos ora riba papel na fin di luna.",
-      "Manehá fakturanan huntu ku sitanan di pasiente i deklarashonnan. Tene administrashon di bo práktika den un solo aplikashon en bes di dependé di diferente stapel di papel."
+      "Planifiká sitanan di pasiente den un agenda digital. Mira bo planifikashon riba desktop òf mobil i tene bo sitanan den e mesun aplikashon ku administrashon di bo práktika.",
+      "Manda rekordatorio pa pashèntnan pa nan no pèrdè nan sita.",
+      "Manehá fakturanan huntu ku sitanan di pasiente. Tene administrashon di bo práktika den un solo aplikashon en bes di dependé di diferente stapel di papel."
     ],
     "allLabel": "Informashon di pasiente i administrashon di práktika",
     "allTitle": "Mira bo planifikashon.<br>Haña informashon di pasiente.<br><em>Sigui duna bon kuido.</em>",
@@ -296,7 +288,7 @@ const translations = {
     ],
     "ctaTitle": "Bo pasientenan mester di bo tempu. Bo papel no.",
     "ctaText": "Trese bo sitanan, deklarashonnan di SVB i fakturashon den Pipita, i dediká ménos di bo dia na administrashon repetitivo di bo práktika.",
-    "faqTitle": "Preguntanan tokante maneho di práktika ku Pipita",
+    "faqTitle": "Preguntanan frekuente",
     "faqLabel": "Skohe software pa bo práktika",
     "questions": [
       "Kiko mi por maneha ku Pipita?",
@@ -318,7 +310,7 @@ const translations = {
       "Si. Informashon di pasiente, planifikashon i administrashon ta parti di e mesun aplikashon. Bo por maneha e trabou diario di bo práktika sin tene e tareanan aki den prosesonan separá riba papel.",
       "Si. Amy, un fisioterapeuta, i Kyara, un desaroyadó di software, a traha Pipita promé pa redusí e tempu ku Amy tabata pasa riba deklarashonnan. Amy a tèst e software den su práktika diario. Komentario di otro profeshonalnan di kuido a yuda forma e aplikashon pa maneho di práktika."
     ],
-    "footerTag": "Software pa maneho di práktika pa dunadónan di kuido na Kòrsou. Planifikashon, deklarashonnan di SVB i fakturashon den un solo aplikashon.",
+    "footerTag": "Software pa maneho di práktika pa dunadónan di kuido na Kòrsou.",
     "footerHeads": [
       "Pipita pa bo práktika",
       "Dunadónan di kuido",
@@ -367,7 +359,9 @@ const translations = {
     "impactLabel": "Ménos tempu pa deklarashonnan mensual di SVB",
     "impactTitle": "16 ora di administrashon.<br>Redusí pa 2.",
     "impactText": "Pa un fisioterapeuta ku 50 pasiente, Pipita a redusí preparashon di deklarashonnan mensual di SVB di 16 ora pa 2. Ta 14 ora ménos kada luna dediká na prepará deklarashonnan.",
-    "impactNote": "Un resultado di un práktika di fisioterapia. E tempu spar ta varia segun tamaño di e práktika i su manera di traha."
+    "impactNote": "Un resultado di un práktika di fisioterapia. E tempu spar ta varia segun tamaño di e práktika i su manera di traha.",
+    "awardNomination": "Nominá pa e Curaçao Digital Innovation Award 2026 di CITI.",
+    "heroScreenshotAlt": "Aplikashon di Pipita riba desktop ku agenda mensual di sita i navigashon pa pasientenan i fakturanan."
   }
 };
 
@@ -396,19 +390,24 @@ function render(lang) {
       
       
       <h1>${t.hero}</h1>
+      <p class="hero-sub">${t.heroSubtitle}</p>
     
-      <div class="hero-buttons"><button class="btn btn-dark" data-start>${t.start} </button><a class="btn" href="#features">${t.explore}<span aria-hidden="true">↓</span></a></div></div><div class="hero-art" role="img" aria-label="${t.screen}">${dashboard(t)}${phone(t,'hero-phone')}</div>
-       <div class="hero-foot wrap">${t.pillars.map(p=>`<span><b aria-hidden="true">✧</b>${p}</span>`).join('')}</div>
+      <div class="hero-buttons"><button class="btn btn-dark" data-start>${t.start} </button></div></div><div class="hero-art hero-art--screenshot"><div class="browser"><img class="hero-screenshot" src="images/Desktop_Screenshot_Pipita.png" alt="${t.heroScreenshotAlt}" width="3000" height="1616" fetchpriority="high"></div></div>
+       <div class="hero-foot wrap"><p class="award-nomination"><span aria-hidden="true">✧</span> ${t.awardNomination}</p></div>
       </section>
   <section class="section wrap" id="businesses"><div class="section-head">
 
-  <h2>${t.businessTitle}</h2><p>${t.businessIntro}</p><button class="btn btn-dark" data-start>${t.start} </button></div><div class="business-grid">${t.businesses.map((n,i)=>`<article class="business-card" data-image-slot="business-${i+1}"><span class="image-note">${t.placeholder}</span><span class="placeholder-icon" aria-hidden="true">${['✧','♡','✚'][i]}</span><h3>${n}</h3></article>`).join('')}</div></section>
-  <section class="section features" id="features"><div class="wrap"><div class="section-label">${t.featureLabel}</div><h2>${t.featureTitle}</h2><p class="intro">${t.featureIntro}</p><div class="feature-grid">${t.featureNames.map((n,i)=>`<article><div class="feature-icon" aria-hidden="true">${['▦','♡','↗'][i]}</div><h3>${n}</h3><p>${t.featureDescriptions[i]}</p></article>`).join('')}</div><aside class="impact" aria-labelledby="impact-title"><div><div class="section-label">${t.impactLabel}</div><h3 id="impact-title">${t.impactTitle}</h3></div><div><p>${t.impactText}</p><p class="impact-note">${t.impactNote}</p></div></aside></div></section>
-  <section class="section wrap split"><div><div class="section-label">${t.allLabel}</div><h2>${t.allTitle}</h2><p class="intro">${t.allIntro}</p><ul class="checklist">${t.checks.map(c=>`<li>${c}</li>`).join('')}</ul></div><div class="phones" role="img" aria-label="${t.screen}"><div class="phone profile" aria-hidden="true"><div class="phone-status"><span>9:41</span><span>▰ ▰</span></div><div class="profile-body"><div class="profile-avatar">J</div><h3>${t.sample}</h3><p>${t.profile}</p><div class="profile-block"><b>${t.notes}</b><div class="profile-tags">${t.tags.map(tag=>`<span>${tag}</span>`).join('')}</div></div><div class="profile-block"><b>${t.inspiration}</b><div class="profile-tiles"><i></i><i></i><i></i><i></i></div></div><div class="profile-block"><b>${t.next}</b>${t.date}</div></div></div>${phone(t)}</div></section>
-  <section class="cta"><h2>${t.ctaTitle}</h2><p>${t.ctaText}</p><button class="btn" data-start>${t.start} </button></section>
-  <section class="section wrap" id="faq"><div class="section-head"><div class="section-label">${t.faqLabel}</div><h2>${t.faqTitle}</h2></div><div class="faq-list">${t.questions.map((q,i)=>`<details><summary>${q}</summary><p>${t.answers[i]}</p></details>`).join('')}</div></section>
+  <h2>${t.businessTitle}</h2><p>${t.businessIntro}</p><button class="btn btn-dark" data-start>${t.start} </button></div><div class="business-grid">${t.businesses.map((n,i)=>`<article class="business-card" data-image-slot="business-${i+1}"><img src="images/${['Physio.png','Phsy.png','Other.png'][i]}" alt="" width="1200" height="1000" loading="lazy" decoding="async"><h3>${n}</h3></article>`).join('')}</div></section>
+  <section class="section features" id="features"><div class="wrap">
+
+  <h2>${t.featureTitle}</h2><p class="intro">${t.featureIntro}</p>
+  <div class="feature-grid">${t.featureNames.map((n,i)=>`<article>
+    <h3>${n}</h3><p>${t.featureDescriptions[i]}</p></article>`).join('')}</div></div></section>
+  <section class="section wrap" id="faq"><div class="section-head">
+  
+  <h2>${t.faqTitle}</h2></div><div class="faq-list">${t.questions.map((q,i)=>`<details><summary>${q}</summary><p>${t.answers[i]}</p></details>`).join('')}</div></section>
   </main>
-  <footer class="footer"><div class="wrap"><div class="footer-grid"><div class="footer-brand"><a href="#" aria-label="Pipita">${brand}</a><p class="footer-tag">${t.footerTag}</p></div><div><h3>${t.footerHeads[0]}</h3><div class="footer-links"><a href="#main">${t.footerLink}</a><a href="#features">${t.nav[1]}</a><a href="#faq">${t.nav[2]}</a></div></div><div><h3>${t.footerHeads[1]}</h3><div class="footer-links">${t.businesses.slice(0,4).map(n=>`<a href="#businesses">${n}</a>`).join('')}</div></div><div><h3>${t.footerHeads[2]}</h3><div class="footer-links"><a href="#get-started" data-start>${t.footerCta}</a></div></div></div><div class="footer-bottom">${languageSelect(t,'footer')}<span>© ${new Date().getFullYear()} Pipita. ${t.rights}</span></div><p class="draft-note">${t.draft}</p></div></footer>
+  <footer class="footer"><div class="wrap"><div class="footer-grid"><div class="footer-brand"> <a class="header-logo" href="#" aria-label="Pipita"><img src="images/Logo_Name_Dark.png" alt="Pipita" width="1270" height="499"></a> <p class="footer-tag">${t.footerTag}</p></div><div><h3>${t.footerHeads[0]}</h3><div class="footer-links"><a href="#main">${t.footerLink}</a><a href="#features">${t.nav[1]}</a><a href="#faq">${t.nav[2]}</a></div></div><div><h3>${t.footerHeads[1]}</h3><div class="footer-links">${t.businesses.slice(0,4).map(n=>`<a href="#businesses">${n}</a>`).join('')}</div></div><div><h3>${t.footerHeads[2]}</h3><div class="footer-links"><a href="#get-started" data-start>${t.footerCta}</a></div></div></div><div class="footer-bottom">${languageSelect(t,'footer')}<span>© ${new Date().getFullYear()} Pipita. ${t.rights}</span></div> </div></footer>
   <dialog id="signup-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description"><button class="dialog-close" aria-label="${t.dismiss}" data-close>×</button><h2 id="dialog-title">${t.dialogTitle}</h2><p id="dialog-description">${t.dialogText}</p><button class="btn btn-dark" data-close>${t.close}</button></dialog>`;
   document.querySelectorAll('[data-language]').forEach(select => {
     select.value = lang;
@@ -438,7 +437,7 @@ function render(lang) {
   const dialog = document.getElementById('signup-dialog');
   document.querySelectorAll('[data-start]').forEach(button => button.addEventListener('click', event => {
     event.preventDefault();
-    if (config.signupUrl) { window.location.assign(config.signupUrl); return; }
+    if (config.signupUrl) { window.open(config.signupUrl, '_blank', 'noopener,noreferrer'); return; }
     dialog.showModal();
   }));
   document.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click', () => dialog.close()));
