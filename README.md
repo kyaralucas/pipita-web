@@ -4,33 +4,10 @@ Responsive, static HTML + CSS + JavaScript. No build step or dependencies.
 
 Open `index.html` directly, or run `python3 -m http.server 8000` in this folder and visit `http://localhost:8000`.
 
-## Content status
+## Search and link previews
 
-Product copy is adapted from the user-provided `Pipita - Description.pdf`: browser-based practice management for healthcare providers in Curaçao, including scheduling, patient information, SVB declarations, invoicing, and data safeguards. The time-saving example is explicitly scoped to one physiotherapist with 50 patients (monthly SVB claims preparation reduced from 16 to 2 hours); it is not presented as a guaranteed result. Future expansion is described as planned, not already available. No launch date is asserted because the numeric date in the document is ambiguous. Papiamentu is a draft translation and should receive a fluent speaker's review.
+`index.html` contains the search description, canonical URL, Open Graph tags, and Twitter large-image card tags. Link previews use the English title and description and `images/Desktop_Screenshot_Pipita.png`; these tags are static so preview crawlers do not need JavaScript. Language switching updates the browser title and search description, but social previews remain English for all language query parameters.
 
-The page includes the hero and app preview, three healthcare category cards, three feature columns, a two-phone product section, gradient CTA, accessible FAQ accordions, and footer. Fake ratings, customer counts, prices, legal policies, and social accounts have intentionally not been invented.
+The public URL is `https://kyaralucas.github.io/pipita-web/`. If it changes, update the canonical URL, `og:url`, both share-image URLs, and `sitemap.xml`. Submit the sitemap to Google Search Console after publishing. A project-level `robots.txt` would not control this GitHub Pages site: crawlers look for it at the domain root, `https://kyaralucas.github.io/robots.txt`.
 
-All three languages live in `translations` in `script.js`. The selectors update the whole page, document language, title, and description; the selection is persisted in local storage when available. Direct links: `?lang=en`, `?lang=nl`, `?lang=pap`. Language switching requires JavaScript. Google Fonts is optional; system sans-serif fallbacks work offline.
-
-Set `config.signupUrl` in `script.js` to the actual onboarding URL. Until then, CTA buttons open a clear preview notice. No forms send or store personal information.
-
-## Image handoff
-
-Supply original exports without device frames, added text, rounded corners, or shadows. CSS provides those treatments. All dimensions below are recommended source sizes; larger originals are welcome.
-
-| Asset | Recommended size | Format / notes |
-| --- | --- | --- |
-| Logo | SVG preferred; PNG at least 600 px wide | Transparent background; dark and white variants. Temporary text wordmark appears in header and footer. |
-| Desktop app screenshot | 2400 × 1400 px | PNG or WebP, approximately 12:7. Replaces `.browser` contents. |
-| Mobile calendar screenshot | 900 × 1800 px | PNG or WebP, 1:2. Reused in hero and product section. |
-| Mobile patient/profile screenshot | 900 × 1800 px | PNG or WebP, 1:2. Replaces `.profile` contents. |
-| Healthcare photos (3) | 1200 × 1200 px each | WebP or high-quality JPEG. Subject centered with space around edges; cropped to 6:5 on desktop and 3:2 on mobile. Keep the lower quarter clear for category labels. |
-| Optional favicon | SVG or 512 × 512 px PNG | Square brand mark. |
-
-Business photo slots are marked `data-image-slot="business-1"` through `business-3` (physiotherapy, psychology, and other care professionals). Add images with `width:100%; height:100%; object-fit:cover; position:absolute; inset:0`, remove `.placeholder-icon` and `.image-note`, and keep the existing gradient and headings. Use empty alt text for decorative photos already described by category headings. For app screenshot replacements, preserve the surrounding translated accessible preview label and use empty alt text on the images inside it.
-
-If screenshots contain readable interface text, localized versions for all three languages are ideal. Otherwise the marketing page can translate while app images retain the source language.
-
-## Before publishing
-
-Review the translations, connect onboarding, add final assets, and remove the preview notice. The PDF specifies a monthly subscription but supplies no prices or onboarding URL, so those remain unset. Add genuine privacy, terms, and contact destinations when supplied. For search-indexed language versions, consider separate pre-rendered language pages; this version switches language in the browser.
+Metadata changes and image assets must be deployed before external share previews can use them. Existing previews may be cached by the sharing platform. The page content still renders with JavaScript; separate pre-rendered language pages would be needed for language-specific static previews.
